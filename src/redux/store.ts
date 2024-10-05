@@ -8,7 +8,6 @@ const store = configureStore({
     auth: authReducer,
     tasks: tasksReducer,
   },
-  // You can add middleware if needed
 });
 
 export default store;

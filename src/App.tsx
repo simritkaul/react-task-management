@@ -11,14 +11,14 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       {currentView === ViewTypes.auth && (
         <Auth onSwitchToTasks={() => handleViewChange(ViewTypes.tasks)} />
       )}
       {currentView === ViewTypes.tasks && (
         <Tasks onSwitchToAuth={() => handleViewChange(ViewTypes.auth)} />
       )}
-    </div>
+    </>
   );
 };
 

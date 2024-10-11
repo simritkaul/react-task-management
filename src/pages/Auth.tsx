@@ -1,4 +1,3 @@
-import { Box, HStack } from "@chakra-ui/react";
 import SignInForm from "../components/SignInForm";
 import SignUpForm from "../components/SignUpForm";
 import { useState } from "react";
@@ -19,10 +18,10 @@ const Auth = ({ onSwitchToTasks }: AuthProps) => {
 
   return (
     <>
-      <HStack spacing={2}>
-        <Box fontWeight="bold" as="h1" fontSize={"extraLarge"}>
+      <div className="flex flex-col md:flex-row justify-evenly items-center min-h-screen">
+        <h1 className="font-bold text-darkBlue text-extraLarge">
           Task Management
-        </Box>
+        </h1>
         {authProcess === AuthProcessTypes.signIn && (
           <SignInForm
             onSwitchToSignUp={() =>
@@ -37,7 +36,7 @@ const Auth = ({ onSwitchToTasks }: AuthProps) => {
             }
           />
         )}
-      </HStack>
+      </div>
     </>
   );
 };

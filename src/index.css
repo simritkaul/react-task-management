@@ -1,4 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   margin: 0;
   padding: 0;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-lightPurple; /* Set global font and background color */
+  }
 }

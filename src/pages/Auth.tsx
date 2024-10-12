@@ -27,6 +27,7 @@ const Auth = ({ onSwitchToTasks }: AuthProps) => {
             onSwitchToSignUp={() =>
               handleAuthTypeChange(AuthProcessTypes.signUp)
             }
+            onSwitchToTasks={onSwitchToTasks}
           />
         )}
         {authProcess === AuthProcessTypes.signUp && (

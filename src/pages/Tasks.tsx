@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { TaskViewEnum } from "../types/tasks/taskTypes";
 import StandardTasksGrid from "../components/StandardTasksGrid";
 import StatusWiseTasksGrid from "../components/StatusWiseTasksGrid";
+import EmptyTasksGrid from "../components/EmptyTasksGrid";
 
 interface TasksProps {
   onSwitchToAuth: () => void;
@@ -20,6 +21,7 @@ const Tasks = ({ onSwitchToAuth }: TasksProps) => {
       <Controls taskView={taskView} setTaskView={setTaskView} />
       {taskView === TaskViewEnum.standard && <StandardTasksGrid />}
       {taskView === TaskViewEnum.status && <StatusWiseTasksGrid />}
+      {true && <EmptyTasksGrid />}
     </>
   );
 };

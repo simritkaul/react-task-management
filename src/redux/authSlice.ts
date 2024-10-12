@@ -1,7 +1,11 @@
 // src/redux/authSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { signUpAPI, signInAPI } from "../api/auth";
-import { SignInAPIResponse, User, UserCredentials } from "../types/userTypes";
+import {
+  SignInAPIResponse,
+  User,
+  UserCredentials,
+} from "../types/auth/userTypes";
 
 interface AuthState {
   user: User | null;

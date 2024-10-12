@@ -1,6 +1,11 @@
 // src/redux/taskSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { CreateTask, Task, TaskFilter, TaskStatus } from "../types/taskTypes"; // Define your Task type
+import {
+  CreateTask,
+  Task,
+  TaskFilter,
+  TaskStatus,
+} from "../types/tasks/taskTypes"; // Define your Task type
 import {
   fetchTasksAPI,
   fetchTaskByIdAPI,

@@ -21,3 +21,8 @@ export interface Task {
   description: string;
   status: string;
 }
+
+export enum TaskViewEnum {
+  standard = "standard",
+  status = "status",
+}

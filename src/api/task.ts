@@ -1,5 +1,5 @@
 // src/api/tasks.ts
-import { CreateTask, TaskFilter, TaskStatus } from "../types/taskTypes";
+import { CreateTask, TaskFilter, TaskStatus } from "../types/tasks/taskTypes";
 import axiosInstance from "./axiosInstance";
 
 export const fetchTasksAPI = async (taskFilter: TaskFilter) => {

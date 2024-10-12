@@ -1,5 +1,5 @@
 // src/api/auth.ts
-import { UserCredentials } from "../types/userTypes";
+import { UserCredentials } from "../types/auth/userTypes";
 import axiosInstance from "./axiosInstance";
 
 export const signUpAPI = async (userData: UserCredentials) => {

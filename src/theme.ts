@@ -1,4 +1,23 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, Switch } from "@chakra-ui/react";
+import { switchAnatomy } from "@chakra-ui/anatomy";
+import { createMultiStyleConfigHelpers } from "@chakra-ui/react";
+
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(switchAnatomy.keys);
+
+const baseStyle = definePartsStyle({
+  // define the part you're going to style
+  container: {},
+  thumb: {},
+  track: {
+    bg: "darkPurple",
+    _checked: {
+      bg: "darkBlue",
+    },
+  },
+});
+
+const switchTheme = defineMultiStyleConfig({ baseStyle });
 
 const theme = extendTheme({
   colors: {
@@ -19,6 +38,9 @@ const theme = extendTheme({
     medium: "24px",
     large: "36px",
     extraLarge: "48px",
+  },
+  components: {
+    Switch: switchTheme,
   },
   styles: {
     global: {

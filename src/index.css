@@ -12,9 +12,3 @@ html {
     @apply font-body bg-lightPurple; /* Set global font and background color */
   }
 }
-
-.chakra-avatar__initials {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}

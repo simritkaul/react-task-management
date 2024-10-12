@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ViewTypes } from "./types/viewTypes";
 import Auth from "./pages/Auth";
 import Tasks from "./pages/Tasks";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [currentView, setCurrentView] = useState<ViewTypes>(ViewTypes.auth);
@@ -18,6 +19,7 @@ const App = () => {
       {currentView === ViewTypes.tasks && (
         <Tasks onSwitchToAuth={() => handleViewChange(ViewTypes.auth)} />
       )}
+      <Footer />
     </>
   );
 };

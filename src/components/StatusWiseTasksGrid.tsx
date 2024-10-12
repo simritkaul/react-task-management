@@ -1,5 +1,11 @@
-const StatusWiseTasksGrid = () => {
-  if (true) return null;
+import { Task } from "../types/tasks/taskTypes";
+
+interface StatusWiseTasksGridProps {
+  tasks: Task[];
+}
+
+const StatusWiseTasksGrid = ({ tasks }: StatusWiseTasksGridProps) => {
+  if (!tasks?.length) return null;
   return <div>StatusWiseTasksGrid</div>;
 };
 

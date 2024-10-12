@@ -10,9 +10,9 @@ const baseStyle = definePartsStyle({
   container: {},
   thumb: {},
   track: {
-    bg: "darkPurple",
+    bg: "red",
     _checked: {
-      bg: "darkBlue",
+      bg: "green",
     },
   },
 });

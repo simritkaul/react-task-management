@@ -47,9 +47,9 @@ const SignInForm = ({ onSwitchToSignUp, onSwitchToTasks }: SignInProps) => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 bg-white rounded-custom py-5 px-10">
-        <h1 className="font-semibold text-darkBlue text-large">Sign In</h1>
-        <form onSubmit={formik.handleSubmit}>
+      <form onSubmit={formik.handleSubmit}>
+        <div className="flex flex-col gap-2 bg-white rounded-custom py-5 px-10">
+          <h1 className="font-semibold text-darkBlue text-large">Sign In</h1>
           <div className="my-2">
             <label htmlFor="username" className="text-darkBlue text-small">
               Username
@@ -95,8 +95,8 @@ const SignInForm = ({ onSwitchToSignUp, onSwitchToTasks }: SignInProps) => {
               Sign Up
             </Link>
           </Text>
-        </form>
-      </div>
+        </div>
+      </form>
     </>
   );
 };
